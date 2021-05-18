@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Speech Evaluation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container pb-5 pt-5">
+      <h1 class="text-center display-1 pt-5 pb-5">Speech Evaluation</h1>
+      <form class="pt-5 pb-5" id="evaluation-form" action="#" onsubmit="return submitForm();">
+        <div class="form-group col-md-4 pt-5 pb-5">
+          <label for="name-input">Name</label>
+          <input id="name-input" class="form-control" type="text" placeholder="Jane Smith" required="true" />
+        </div>
+        <h4 class="pt-5 text-success">APDC2-088-04</h4>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Amused</h5>
+                <audio controls="true" src="samples/APDC2-088-04_amu_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_amu_cyc.wav-emotionRadio" name="APDC2-088-04_amu-emotionRadio" class="custom-control-input" value="APDC2-088-04_amu_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_amu_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_amu_cyc.wav-qualityRadio" name="APDC2-088-04_amu-qualityRadio" class="custom-control-input" value="APDC2-088-04_amu_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_amu_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Amused</h5>
+                <audio controls="true" src="samples/APDC2-088-04_amu_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_amu_vaw.wav-emotionRadio" name="APDC2-088-04_amu-emotionRadio" class="custom-control-input" value="APDC2-088-04_amu_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_amu_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_amu_vaw.wav-qualityRadio" name="APDC2-088-04_amu-qualityRadio" class="custom-control-input" value="APDC2-088-04_amu_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_amu_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Anger</h5>
+                <audio controls="true" src="samples/APDC2-088-04_ang_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_ang_cyc.wav-emotionRadio" name="APDC2-088-04_ang-emotionRadio" class="custom-control-input" value="APDC2-088-04_ang_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_ang_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_ang_cyc.wav-qualityRadio" name="APDC2-088-04_ang-qualityRadio" class="custom-control-input" value="APDC2-088-04_ang_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_ang_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Anger</h5>
+                <audio controls="true" src="samples/APDC2-088-04_ang_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_ang_vaw.wav-emotionRadio" name="APDC2-088-04_ang-emotionRadio" class="custom-control-input" value="APDC2-088-04_ang_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_ang_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_ang_vaw.wav-qualityRadio" name="APDC2-088-04_ang-qualityRadio" class="custom-control-input" value="APDC2-088-04_ang_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_ang_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Disgust</h5>
+                <audio controls="true" src="samples/APDC2-088-04_dis_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_dis_cyc.wav-emotionRadio" name="APDC2-088-04_dis-emotionRadio" class="custom-control-input" value="APDC2-088-04_dis_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_dis_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_dis_cyc.wav-qualityRadio" name="APDC2-088-04_dis-qualityRadio" class="custom-control-input" value="APDC2-088-04_dis_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_dis_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Disgust</h5>
+                <audio controls="true" src="samples/APDC2-088-04_dis_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_dis_vaw.wav-emotionRadio" name="APDC2-088-04_dis-emotionRadio" class="custom-control-input" value="APDC2-088-04_dis_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_dis_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_dis_vaw.wav-qualityRadio" name="APDC2-088-04_dis-qualityRadio" class="custom-control-input" value="APDC2-088-04_dis_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_dis_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Sleepy</h5>
+                <audio controls="true" src="samples/APDC2-088-04_sle_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_sle_cyc.wav-emotionRadio" name="APDC2-088-04_sle-emotionRadio" class="custom-control-input" value="APDC2-088-04_sle_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_sle_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_sle_cyc.wav-qualityRadio" name="APDC2-088-04_sle-qualityRadio" class="custom-control-input" value="APDC2-088-04_sle_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-088-04_sle_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Sleepy</h5>
+                <audio controls="true" src="samples/APDC2-088-04_sle_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_sle_vaw.wav-emotionRadio" name="APDC2-088-04_sle-emotionRadio" class="custom-control-input" value="APDC2-088-04_sle_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_sle_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-088-04_sle_vaw.wav-qualityRadio" name="APDC2-088-04_sle-qualityRadio" class="custom-control-input" value="APDC2-088-04_sle_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-088-04_sle_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 class="pt-5 text-success">APDC2-026-03</h4>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Amused</h5>
+                <audio controls="true" src="samples/APDC2-026-03_amu_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_amu_cyc.wav-emotionRadio" name="APDC2-026-03_amu-emotionRadio" class="custom-control-input" value="APDC2-026-03_amu_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_amu_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_amu_cyc.wav-qualityRadio" name="APDC2-026-03_amu-qualityRadio" class="custom-control-input" value="APDC2-026-03_amu_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_amu_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Amused</h5>
+                <audio controls="true" src="samples/APDC2-026-03_amu_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_amu_vaw.wav-emotionRadio" name="APDC2-026-03_amu-emotionRadio" class="custom-control-input" value="APDC2-026-03_amu_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_amu_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_amu_vaw.wav-qualityRadio" name="APDC2-026-03_amu-qualityRadio" class="custom-control-input" value="APDC2-026-03_amu_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_amu_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Anger</h5>
+                <audio controls="true" src="samples/APDC2-026-03_ang_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_ang_cyc.wav-emotionRadio" name="APDC2-026-03_ang-emotionRadio" class="custom-control-input" value="APDC2-026-03_ang_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_ang_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_ang_cyc.wav-qualityRadio" name="APDC2-026-03_ang-qualityRadio" class="custom-control-input" value="APDC2-026-03_ang_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_ang_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Anger</h5>
+                <audio controls="true" src="samples/APDC2-026-03_ang_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_ang_vaw.wav-emotionRadio" name="APDC2-026-03_ang-emotionRadio" class="custom-control-input" value="APDC2-026-03_ang_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_ang_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_ang_vaw.wav-qualityRadio" name="APDC2-026-03_ang-qualityRadio" class="custom-control-input" value="APDC2-026-03_ang_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_ang_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Disgust</h5>
+                <audio controls="true" src="samples/APDC2-026-03_dis_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_dis_cyc.wav-emotionRadio" name="APDC2-026-03_dis-emotionRadio" class="custom-control-input" value="APDC2-026-03_dis_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_dis_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_dis_cyc.wav-qualityRadio" name="APDC2-026-03_dis-qualityRadio" class="custom-control-input" value="APDC2-026-03_dis_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_dis_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Disgust</h5>
+                <audio controls="true" src="samples/APDC2-026-03_dis_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_dis_vaw.wav-emotionRadio" name="APDC2-026-03_dis-emotionRadio" class="custom-control-input" value="APDC2-026-03_dis_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_dis_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_dis_vaw.wav-qualityRadio" name="APDC2-026-03_dis-qualityRadio" class="custom-control-input" value="APDC2-026-03_dis_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_dis_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">CycleGAN: Sleepy</h5>
+                <audio controls="true" src="samples/APDC2-026-03_sle_cyc.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_sle_cyc.wav-emotionRadio" name="APDC2-026-03_sle-emotionRadio" class="custom-control-input" value="APDC2-026-03_sle_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_sle_cyc.wav-emotionRadio">This emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_sle_cyc.wav-qualityRadio" name="APDC2-026-03_sle-qualityRadio" class="custom-control-input" value="APDC2-026-03_sle_cyc.wav" checked="true" />
+                  <label class="custom-control-label" for="APDC2-026-03_sle_cyc.wav-qualityRadio">This has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <div class="card">
+              <div class="card-body text-center">
+                <h5 class="card-title">VAW-GAN: Sleepy</h5>
+                <audio controls="true" src="samples/APDC2-026-03_sle_vaw.wav"></audio>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_sle_vaw.wav-emotionRadio" name="APDC2-026-03_sle-emotionRadio" class="custom-control-input" value="APDC2-026-03_sle_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_sle_vaw.wav-emotionRadio">That emotion is better.</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="APDC2-026-03_sle_vaw.wav-qualityRadio" name="APDC2-026-03_sle-qualityRadio" class="custom-control-input" value="APDC2-026-03_sle_vaw.wav" />
+                  <label class="custom-control-label" for="APDC2-026-03_sle_vaw.wav-qualityRadio">That has better speech quality.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">Download CSV</button>
+      </form>
+    </div>
+  </body>
+  <script>
+    
+                function clearForm() {
+                    document.getElementById("evaluation-form").reset();
+                }
+
+                function submitForm() {
+                    let formData = [
+                        $("#name-input").val(),
+                        $("input[name=APDC2-026-03_amu-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_amu-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_ang-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_ang-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_dis-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_dis-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_sle-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-026-03_sle-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_amu-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_amu-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_ang-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_ang-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_dis-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_dis-qualityRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_sle-emotionRadio]:checked").val(),
+                        $("input[name=APDC2-088-04_sle-qualityRadio]:checked").val(),
+                    ];
+                    let csv = "data:text/csv;charset=utf-8,";
+
+                    formData.forEach(function(item) {
+                        csv += item + ";";
+                    });
+
+                    let encodedUri = encodeURI(csv);
+
+                    // if you want to download
+                    let downloadLink = document.createElement("a");
+                    downloadLink.setAttribute("download", "evaluation.csv");
+                    downloadLink.setAttribute("href", encodedUri);
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    downloadLink.remove();
+
+                    clearForm();
+                    return false;
+                }
+                
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</html>
