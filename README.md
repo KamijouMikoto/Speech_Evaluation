@@ -60,4 +60,4 @@ This repository contains demo files for comparison between emotion speech genera
         ```
 
 
-It is planned in the future to perform the steps in 2. automatically.
+It is planned in the future to perform the steps in 2. and 3. automatically.
