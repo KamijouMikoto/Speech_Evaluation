@@ -6,7 +6,7 @@ from airium import Airium
 
 
 def get_file_list():
-    file_list = os.listdir('./samples')
+    file_list = os.listdir('./out/samples')
 
     _files_by_original_file = defaultdict(list)
     
