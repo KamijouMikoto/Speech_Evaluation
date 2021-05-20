@@ -98,42 +98,56 @@ def generate_html():
                     a.button(_t="Download CSV", type="submit", klass="btn btn-primary mt-5")
         with a.script():
             a(
-                '''
-                function clearForm() {
+                f'''
+                function clearForm() {{
                     document.getElementById("evaluation-form").reset();
-                }
+                }}
 
-                function submitForm() {
-                    let formData = [
-                        $("#name-input").val(),
-                        $("input[name=APDC2-026-03_amu-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_amu-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_ang-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_ang-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_dis-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_dis-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_sle-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_sle-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_amu-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_amu-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_ang-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_ang-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_dis-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_dis-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_sle-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_sle-qualityRadio]:checked").val(),
-                    ];
+                function buildCsvRow(emotionFile, qualityFile, firstModel, secondModel) {{
+                    let fileNameParts = emotionFile.split("_")
+                    return `${{fileNameParts[0]}};${{fileNameParts[1]}};${{emotionFile.includes(firstModel) ? 0 : 1}};${{qualityFile.includes(firstModel) ? 0 : 1}}\\n`
+                }}
+
+                function getEmotionRadioData() {{
+                    return [
+                        {','.join([
+                            f'$("input[name={emotion_radio_name_from_file_name(model_files[0])}]:checked").val()'
+                            for _, model_file_list in get_file_list().items()
+                            for model_files in model_file_list
+                        ])}
+                    ]
+                }}
+
+                function getQualityRadioData() {{
+                    return [
+                        {','.join([
+                            f'$("input[name={quality_radio_name_from_file_name(model_files[0])}]:checked").val()'
+                            for _, model_file_list in get_file_list().items()
+                            for model_files in model_file_list
+                        ])}
+                    ]
+                }}
+
+                function submitForm() {{
+                    const FIRST_MODEL = "cyc";
+                    const SECOND_MODEL = "vaw";
+                    
+                    let name = $("#name-input").val();
+                    let emotionRadioData = getEmotionRadioData()
+                    let qualityRadioData = getQualityRadioData()
+
                     let csv = "data:text/csv;charset=utf-8,";
 
-                    formData.forEach(function(item) {
-                        csv += item + ";";
-                    });
+                    csv += "filename;emotion;expression;quality\\n"
+
+                    for (let i = 0; i < emotionRadioData.length; i++) {{
+                        csv += buildCsvRow(emotionRadioData[i], qualityRadioData[i], FIRST_MODEL, SECOND_MODEL);
+                    }}
 
                     let encodedUri = encodeURI(csv);
 
-                    // if you want to download
                     let downloadLink = document.createElement("a");
-                    downloadLink.setAttribute("download", "evaluation.csv");
+                    downloadLink.setAttribute("download", `${{name}}_${{FIRST_MODEL}}_${{SECOND_MODEL}}.csv`);
                     downloadLink.setAttribute("href", encodedUri);
                     document.body.appendChild(downloadLink);
                     downloadLink.click();
@@ -141,7 +155,7 @@ def generate_html():
 
                     clearForm();
                     return false;
-                }
+                }}
                 '''
             )
         a.script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js", integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf", crossorigin="anonymous")
