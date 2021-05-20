@@ -297,37 +297,43 @@
                     document.getElementById("evaluation-form").reset();
                 }
 
+                function buildCsvRow(emotionFile, qualityFile, firstModel, secondModel) {
+                    let fileNameParts = emotionFile.split("_")
+                    return `${fileNameParts[0]};${fileNameParts[1]};${emotionFile.includes(firstModel) ? 0 : 1};${qualityFile.includes(firstModel) ? 0 : 1}\n`
+                }
+
+                function getEmotionRadioData() {
+                    return [
+                        $("input[name=APDC2-088-04_amu-emotionRadio]:checked").val(),$("input[name=APDC2-088-04_ang-emotionRadio]:checked").val(),$("input[name=APDC2-088-04_dis-emotionRadio]:checked").val(),$("input[name=APDC2-088-04_sle-emotionRadio]:checked").val(),$("input[name=APDC2-026-03_amu-emotionRadio]:checked").val(),$("input[name=APDC2-026-03_ang-emotionRadio]:checked").val(),$("input[name=APDC2-026-03_dis-emotionRadio]:checked").val(),$("input[name=APDC2-026-03_sle-emotionRadio]:checked").val()
+                    ]
+                }
+
+                function getQualityRadioData() {
+                    return [
+                        $("input[name=APDC2-088-04_amu-qualityRadio]:checked").val(),$("input[name=APDC2-088-04_ang-qualityRadio]:checked").val(),$("input[name=APDC2-088-04_dis-qualityRadio]:checked").val(),$("input[name=APDC2-088-04_sle-qualityRadio]:checked").val(),$("input[name=APDC2-026-03_amu-qualityRadio]:checked").val(),$("input[name=APDC2-026-03_ang-qualityRadio]:checked").val(),$("input[name=APDC2-026-03_dis-qualityRadio]:checked").val(),$("input[name=APDC2-026-03_sle-qualityRadio]:checked").val()
+                    ]
+                }
+
                 function submitForm() {
-                    let formData = [
-                        $("#name-input").val(),
-                        $("input[name=APDC2-026-03_amu-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_amu-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_ang-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_ang-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_dis-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_dis-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_sle-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-026-03_sle-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_amu-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_amu-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_ang-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_ang-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_dis-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_dis-qualityRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_sle-emotionRadio]:checked").val(),
-                        $("input[name=APDC2-088-04_sle-qualityRadio]:checked").val(),
-                    ];
+                    const FIRST_MODEL = "cyc";
+                    const SECOND_MODEL = "vaw";
+                    
+                    let name = $("#name-input").val();
+                    let emotionRadioData = getEmotionRadioData()
+                    let qualityRadioData = getQualityRadioData()
+
                     let csv = "data:text/csv;charset=utf-8,";
 
-                    formData.forEach(function(item) {
-                        csv += item + ";";
-                    });
+                    csv += "filename;emotion;expression;quality\n"
+
+                    for (let i = 0; i < emotionRadioData.length; i++) {
+                        csv += buildCsvRow(emotionRadioData[i], qualityRadioData[i], FIRST_MODEL, SECOND_MODEL);
+                    }
 
                     let encodedUri = encodeURI(csv);
 
-                    // if you want to download
                     let downloadLink = document.createElement("a");
-                    downloadLink.setAttribute("download", "evaluation.csv");
+                    downloadLink.setAttribute("download", `${name}_${FIRST_MODEL}_${SECOND_MODEL}.csv`);
                     downloadLink.setAttribute("href", encodedUri);
                     document.body.appendChild(downloadLink);
                     downloadLink.click();
