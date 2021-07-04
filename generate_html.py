@@ -31,20 +31,21 @@ def generate_html():
             with a.div(klass="container pb-5 pt-5"):
                 a.h1(_t="Speech Evaluation", klass="text-center text-success display-1 pt-5 pb-5")
                 a.p(
-                    _t="Thanks for your time and welcome to the subjective evaluation of our Emotional TTS System!",
+                    _t="Thank you for your time and welcome to the subjective evaluation of our Emotional Speech Samples!",
                     klass="pt-5"
                 )
                 a.p(
-                    _t="""First, you will need to do a self-evaluation which includes 5 questions. Then you will hear
-                    some audios followed by 5 questions about them. Please answer all questions, thanks!
+                    _t="""First, you will need to do a self-evaluation which includes 5 questions about your expertise and background.
+                    Then you will hear overall 50 audio samples, for each of which you are invited to answer 5 questions.
+                    If you are uncertain about an answer listen to the audio sample multiple times.
                     """
                 )
                 with a.p():
-                    a.span(_t="""After you click ‘Submit’, all your results will be recorded, and a CSV file will be
+                    a.span(_t="""After you click ‘Submit’, all your answers will be recorded, and a CSV file will be
                     downloaded. Please send the CSV file to 
                     """)
                     a.a(
-                        href="mailto:zijiang.yang@informatik.uni-augsburg.de?subject=Emotion TTS Evalution",
+                        href="mailto:zijiang.yang@informatik.uni-augsburg.de?subject=Emotional Speech Evalution",
                         _t="zijiang.yang@informatik.uni-augsburg.de",
                         target="_blank",
                         rel="noopener noreferrer"
@@ -52,27 +53,27 @@ def generate_html():
                     a.span(
                         _t=". Thanks for your help!"
                     )
-                a.p(_t="A short definition of emotions included:")
+                a.p(_t="When answering questions related to emotions please consider the following definitions:")
                 with a.ul():
                     with a.li():
                         a.span(_t="Please select ")
-                        a.strong(_t="‘Neutral’")
+                        a.strong(_t="‘neutral’")
                         a.span(_t=" if you think the speaker expresses nothing in particular.")
                     with a.li():
                         a.span(_t="Please select ")
-                        a.strong(_t="‘Anger’")
+                        a.strong(_t="‘anger’")
                         a.span(_t=" if you think the speaker is mad or furious about something.")
                     with a.li():
                         a.span(_t="Please select ")
-                        a.strong(_t="‘Amused’")
+                        a.strong(_t="‘amused’")
                         a.span(_t=" if you think the speaker finds something funny or interesting.")
                     with a.li():
                         a.span(_t="Please select ")
-                        a.strong(_t="‘Disgust’")
+                        a.strong(_t="‘disgust’")
                         a.span(_t=" if you think the speaker feels nauseating.")
                     with a.li():
                         a.span(_t="Please select ")
-                        a.strong(_t="‘Sleepy’")
+                        a.strong(_t="‘sleepy’")
                         a.span(_t=" if you think the speaker is tired or exhausted.")
                 with a.form(klass="pt-5 pb-5", id="evaluation-form", action="#", onsubmit="return submitForm();"):
                     a.h3(_t="Self-evaluation", klass="text-success pt-5 pb-5")
@@ -83,7 +84,7 @@ def generate_html():
                         for index, question in enumerate(SELF_EVALUATION_QUESTIONS):
                             with a.div(klass="card mt-5"):
                                 with a.div(klass="card-body"):
-                                    a.h6(_t=question, klass="pb-3")
+                                    a.p(_t=question, klass="pb-3")
                                     with a.div(klass="custom-control custom-radio form-check-inline"):
                                         a.input(type="radio", id=f"self-evaluation-{index}-1", name=f"self-evaluation-{index}", klass="custom-control-input", value=1)
                                         a.label(_t="1 — strongly disagree", klass="custom-control-label", for_=f"self-evaluation-{index}-1")
@@ -99,24 +100,27 @@ def generate_html():
                                     with a.div(klass="custom-control custom-radio form-check-inline"):
                                         a.input(type="radio", id=f"self-evaluation-{index}-5", name=f"self-evaluation-{index}", klass="custom-control-input", value=5)
                                         a.label(_t="5 — strongly agree", klass="custom-control-label", for_=f"self-evaluation-{index}-5")
-                    a.h4(_t="Emotional TTS Evaluation", klass="mt-5 pt-5 text-success")
-                    for file in get_file_list():
+                    a.h4(_t="Emotional Speech Evalution", klass="mt-5 pt-5 text-success")
+                    for index, file in enumerate(get_file_list()):
                         with a.div(klass="card mt-5"):
                             with a.div(klass="card-body"):
                                 with a.div(klass="row"):
                                     with a.div(klass="col-lg-4 align-self-center"):
                                         with a.div(klass="text-center"):
-                                            a.audio(controls=True, src=f"samples/{file}", klass='mb-5')
+                                            a.h6(_t=f"Sample {index + 1}")
+                                            a.audio(controls=True, src=f"samples/{file}", klass='mb-5 mt-5')
                                     with a.div(klass="col-lg-8"):
-                                        a.h6(_t="What emotion do you think of the voice expressed?", klass="pb-1")
+                                        with a.p(klass="pb-1"):
+                                            a.strong(_t="What emotion")
+                                            a.span(_t=" do you think of the voice expressed?")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-1-1-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=1)
+                                            a.input(type="radio", id=f"tts-evaluation-1-1-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=1, required=True)
                                             a.label(_t="1 — neutral", klass="custom-control-label", for_=f"tts-evaluation-1-1-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-1-2-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=2)
                                             a.label(_t="2 — amused", klass="custom-control-label", for_=f"tts-evaluation-1-2-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-1-3-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=3, checked=True)
+                                            a.input(type="radio", id=f"tts-evaluation-1-3-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=3)
                                             a.label(_t="3 — anger", klass="custom-control-label", for_=f"tts-evaluation-1-3-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-1-4-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=4)
@@ -125,9 +129,14 @@ def generate_html():
                                             a.input(type="radio", id=f"tts-evaluation-1-5-{file}", name=f"tts-evaluation-1-{file}", klass="custom-control-input", value=5)
                                             a.label(_t="5 — sleepy", klass="custom-control-label", for_=f"tts-evaluation-1-5-{file}")
                                         
-                                        a.h6(_t="If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)", klass="pb-1 pt-5")
+                                        with a.p(klass="pb-1 pt-5"):
+                                            a.span(_t="If ")
+                                            a.strong(_t="NOT neutral")
+                                            a.span(_t=", what do you think of the ")
+                                            a.strong(_t="intensity")
+                                            a.span(_t=" of the emotion expressed? (If neutral, please skip this question)")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-2-1-{file}", name=f"tts-evaluation-2-{file}", klass="custom-control-input", value=1)
+                                            a.input(type="radio", id=f"tts-evaluation-2-1-{file}", name=f"tts-evaluation-2-{file}", klass="custom-control-input", value=1, required=True)
                                             a.label(_t="1 — very weak", klass="custom-control-label", for_=f"tts-evaluation-2-1-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-2-2-{file}", name=f"tts-evaluation-2-{file}", klass="custom-control-input", value=2)
@@ -142,15 +151,17 @@ def generate_html():
                                             a.input(type="radio", id=f"tts-evaluation-2-5-{file}", name=f"tts-evaluation-2-{file}", klass="custom-control-input", value=5)
                                             a.label(_t="5 — very strong", klass="custom-control-label", for_=f"tts-evaluation-2-5-{file}")
 
-                                        a.h6(_t="How close to human would you rate the voice speaking?", klass="pb-1 pt-5")
+                                        with a.p(klass="pb-1 pt-5"):
+                                            a.strong(_t="How close to human")
+                                            a.span(_t=" would you rate the voice speaking?")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-3-1-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=1)
+                                            a.input(type="radio", id=f"tts-evaluation-3-1-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=1, required=True)
                                             a.label(_t="1 — not at all", klass="custom-control-label", for_=f"tts-evaluation-3-1-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-3-2-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=2)
                                             a.label(_t="2 — a little bit close", klass="custom-control-label", for_=f"tts-evaluation-3-2-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-3-3-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=3, checked=True)
+                                            a.input(type="radio", id=f"tts-evaluation-3-3-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=3)
                                             a.label(_t="3 — close", klass="custom-control-label", for_=f"tts-evaluation-3-3-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-3-4-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=4)
@@ -159,15 +170,18 @@ def generate_html():
                                             a.input(type="radio", id=f"tts-evaluation-3-5-{file}", name=f"tts-evaluation-3-{file}", klass="custom-control-input", value=5)
                                             a.label(_t="5 — extremely close", klass="custom-control-label", for_=f"tts-evaluation-3-5-{file}")
 
-                                        a.h6(_t="What do you think of the speech quality of the voice speaking?", klass="pb-1 pt-5")
+                                        with a.p(klass="pb-1 pt-5"):
+                                            a.span(_t="What do you think of the ")
+                                            a.strong(_t="speech quality")
+                                            a.span(_t=" of the voice speaking?")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-4-1-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=1)
+                                            a.input(type="radio", id=f"tts-evaluation-4-1-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=1, required=True)
                                             a.label(_t="1 — very bad", klass="custom-control-label", for_=f"tts-evaluation-4-1-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-2-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=2)
                                             a.label(_t="2 — bad", klass="custom-control-label", for_=f"tts-evaluation-4-2-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-4-3-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=3, checked=True)
+                                            a.input(type="radio", id=f"tts-evaluation-4-3-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=3)
                                             a.label(_t="3 — moderate", klass="custom-control-label", for_=f"tts-evaluation-4-3-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-4-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=4)
@@ -176,15 +190,18 @@ def generate_html():
                                             a.input(type="radio", id=f"tts-evaluation-4-5-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=5)
                                             a.label(_t="5 — very good", klass="custom-control-label", for_=f"tts-evaluation-4-5-{file}")
 
-                                        a.h6(_t="How much do you like the voice speaking?", klass="pb-1 pt-5")
+                                        with a.p(klass="pb-1 pt-5"):
+                                            a.span(_t="How much do you ")
+                                            a.strong(_t="like")
+                                            a.span(_t=" the voice speaking?")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-5-1-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=1)
+                                            a.input(type="radio", id=f"tts-evaluation-5-1-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=1, required=True)
                                             a.label(_t="1 — not at all", klass="custom-control-label", for_=f"tts-evaluation-5-1-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-5-2-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=2)
                                             a.label(_t="2 — hardly", klass="custom-control-label", for_=f"tts-evaluation-5-2-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
-                                            a.input(type="radio", id=f"tts-evaluation-5-3-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=3, checked=True)
+                                            a.input(type="radio", id=f"tts-evaluation-5-3-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=3)
                                             a.label(_t="3 — moderately", klass="custom-control-label", for_=f"tts-evaluation-5-3-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-5-4-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=4)
@@ -192,7 +209,21 @@ def generate_html():
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-5-5-{file}", name=f"tts-evaluation-5-{file}", klass="custom-control-input", value=5)
                                             a.label(_t="5 — extremely", klass="custom-control-label", for_=f"tts-evaluation-5-5-{file}")
+                    with a.div(klass="from-group mt-5"):
+                        a.label(_for="open-comments", _t="Please leave your general opinion about the speeches here. We are also happy to hear your valuable suggestions. Thanks!")
+                        a.textarea(klass="form-control", id="open-comments", name="open-comments", placeholder="(Optional)", rows="3")
                     a.button(_t="Submit", type="submit", klass="btn btn-primary mt-5")
+                    with a.p(klass="mt-3"):
+                        a.span(_t="Please send the generated CSV file to ")
+                        a.a(
+                            href="mailto:zijiang.yang@informatik.uni-augsburg.de?subject=Emotional Speech Evalution",
+                            _t="zijiang.yang@informatik.uni-augsburg.de",
+                            target="_blank",
+                            rel="noopener noreferrer"
+                        )
+                        a.span(
+                            _t=". Thanks for your help!"
+                        )
         with a.script():
             a(
                 f'''
@@ -216,21 +247,26 @@ def generate_html():
                     return [{",".join([f"getQuestionResponse(`tts-evaluation-{index}-${{file_name}}`)" for index in range(1, 6)])}];
                 }}
 
+                function getOpenComments() {{
+                    let comments = $(`textarea[name="open-comments"]`).val();
+                    if ("" === comments) {{
+                        return "(Optional)\\n";
+                    }} else {{
+                        return comments.replace(/\\r?\\n|\\r/g, " ") + "\\n";
+                    }}
+                }}
+
                 function submitForm() {{
                     let name = $("#name-input").val();
                     let files = [{",".join([f"'{file}'" for file in get_file_list()])}];
-
                     let csv = "data:text/csv;charset=utf-8,";
-
                     csv += "filename;q1;q2;q3;q4;q5\\n";
-
                     csv += buildCsvRow("self_evaluation", getSelfEvaluationResponses());
                     for (let i = 0; i < files.length; i++) {{
                         csv += buildCsvRow(files[i], getTtsEvaluationResponsesForFile(files[i]));
                     }}
-
+                    csv += getOpenComments();
                     let encodedUri = encodeURI(csv);
-
                     let downloadLink = document.createElement("a");
                     downloadLink.setAttribute("download", `${{name}}_results.csv`);
                     downloadLink.setAttribute("href", encodedUri);
