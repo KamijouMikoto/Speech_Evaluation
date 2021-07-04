@@ -8,42 +8,43 @@
   <body>
     <div class="container pb-5 pt-5">
       <h1 class="text-center text-success display-1 pt-5 pb-5">Speech Evaluation</h1>
-      <p class="pt-5">Thanks for your time and welcome to the subjective evaluation of our Emotional TTS System!</p>
-      <p>First, you will need to do a self-evaluation which includes 5 questions. Then you will hear
-                    some audios followed by 5 questions about them. Please answer all questions, thanks!
+      <p class="pt-5">Thank you for your time and welcome to the subjective evaluation of our Emotional Speech Samples!</p>
+      <p>First, you will need to do a self-evaluation which includes 5 questions about your expertise and background.
+                    Then you will hear overall 50 audio samples, for each of which you are invited to answer 5 questions.
+                    If you are uncertain about an answer listen to the audio sample multiple times.
                     </p>
       <p>
-        <span>After you click ‘Submit’, all your results will be recorded, and a CSV file will be
+        <span>After you click ‘Submit’, all your answers will be recorded, and a CSV file will be
                     downloaded. Please send the CSV file to 
                     </span>
-        <a href="mailto:zijiang.yang@informatik.uni-augsburg.de?subject=Emotion TTS Evalution" target="_blank" rel="noopener noreferrer">zijiang.yang@informatik.uni-augsburg.de</a>
+        <a href="mailto:zijiang.yang@informatik.uni-augsburg.de?subject=Emotional Speech Evalution" target="_blank" rel="noopener noreferrer">zijiang.yang@informatik.uni-augsburg.de</a>
         <span>. Thanks for your help!</span>
       </p>
-      <p>A short definition of emotions included:</p>
+      <p>When answering questions related to emotions please consider the following definitions:</p>
       <ul>
         <li>
           <span>Please select </span>
-          <strong>‘Neutral’</strong>
+          <strong>‘neutral’</strong>
           <span> if you think the speaker expresses nothing in particular.</span>
         </li>
         <li>
           <span>Please select </span>
-          <strong>‘Anger’</strong>
+          <strong>‘anger’</strong>
           <span> if you think the speaker is mad or furious about something.</span>
         </li>
         <li>
           <span>Please select </span>
-          <strong>‘Amused’</strong>
+          <strong>‘amused’</strong>
           <span> if you think the speaker finds something funny or interesting.</span>
         </li>
         <li>
           <span>Please select </span>
-          <strong>‘Disgust’</strong>
+          <strong>‘disgust’</strong>
           <span> if you think the speaker feels nauseating.</span>
         </li>
         <li>
           <span>Please select </span>
-          <strong>‘Sleepy’</strong>
+          <strong>‘sleepy’</strong>
           <span> if you think the speaker is tired or exhausted.</span>
         </li>
       </ul>
@@ -56,7 +57,7 @@
         <div class="form-group col-md-8">
           <div class="card mt-5">
             <div class="card-body">
-              <h6 class="pb-3">I am an empathic person, e.g. I get sad or angry during dramatic scenes in movies.</h6>
+              <p class="pb-3">I am an empathic person, e.g. I get sad or angry during dramatic scenes in movies.</p>
               <div class="custom-control custom-radio form-check-inline">
                 <input type="radio" id="self-evaluation-0-1" name="self-evaluation-0" class="custom-control-input" value="1" />
                 <label class="custom-control-label" for="self-evaluation-0-1">1 — strongly disagree</label>
@@ -81,7 +82,7 @@
           </div>
           <div class="card mt-5">
             <div class="card-body">
-              <h6 class="pb-3">I can easily hear and identify how a person feels in a phone conversation. I don’t need to see them to recognize their emotions.</h6>
+              <p class="pb-3">I can easily hear and identify how a person feels in a phone conversation. I don’t need to see them to recognize their emotions.</p>
               <div class="custom-control custom-radio form-check-inline">
                 <input type="radio" id="self-evaluation-1-1" name="self-evaluation-1" class="custom-control-input" value="1" />
                 <label class="custom-control-label" for="self-evaluation-1-1">1 — strongly disagree</label>
@@ -106,7 +107,7 @@
           </div>
           <div class="card mt-5">
             <div class="card-body">
-              <h6 class="pb-3">I am musically trained, e.g. I can play a musical instrument.</h6>
+              <p class="pb-3">I am musically trained, e.g. I can play a musical instrument.</p>
               <div class="custom-control custom-radio form-check-inline">
                 <input type="radio" id="self-evaluation-2-1" name="self-evaluation-2" class="custom-control-input" value="1" />
                 <label class="custom-control-label" for="self-evaluation-2-1">1 — strongly disagree</label>
@@ -131,7 +132,7 @@
           </div>
           <div class="card mt-5">
             <div class="card-body">
-              <h6 class="pb-3">High audio quality in media is important to me, e.g. I own high-end speakers.</h6>
+              <p class="pb-3">High audio quality in media is important to me, e.g. I own high-end speakers.</p>
               <div class="custom-control custom-radio form-check-inline">
                 <input type="radio" id="self-evaluation-3-1" name="self-evaluation-3" class="custom-control-input" value="1" />
                 <label class="custom-control-label" for="self-evaluation-3-1">1 — strongly disagree</label>
@@ -156,7 +157,7 @@
           </div>
           <div class="card mt-5">
             <div class="card-body">
-              <h6 class="pb-3">I am good at predicting other people’s behavior , e.g. I know how my actions will make others feel.</h6>
+              <p class="pb-3">I am good at predicting other people’s behavior , e.g. I know how my actions will make others feel.</p>
               <div class="custom-control custom-radio form-check-inline">
                 <input type="radio" id="self-evaluation-4-1" name="self-evaluation-4" class="custom-control-input" value="1" />
                 <label class="custom-control-label" for="self-evaluation-4-1">1 — strongly disagree</label>
@@ -180,19 +181,23 @@
             </div>
           </div>
         </div>
-        <h4 class="mt-5 pt-5 text-success">Emotional TTS Evaluation</h4>
+        <h4 class="mt-5 pt-5 text-success">Emotional Speech Evalution</h4>
         <div class="card mt-5">
           <div class="card-body">
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_dis_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 1</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_dis_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-1-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-1-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_dis_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -200,7 +205,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_dis_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-1-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-1-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_dis_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -211,9 +216,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-1-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_dis_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-2-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-2-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_dis_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -232,9 +243,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-2-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_dis_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-3-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-3-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_dis_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -242,7 +256,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_dis_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-3-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-3-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_dis_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -253,9 +267,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-3-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_dis_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-4-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-4-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_dis_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -263,7 +281,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_dis_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-4-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-4-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_dis_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -274,9 +292,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-4-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_dis_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-5-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-5-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_dis_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -284,7 +306,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_dis_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-5-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_dis_cyc.wav" name="tts-evaluation-5-APDC2-088-04_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_dis_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -304,13 +326,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_dis_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 2</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_dis_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-1-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-1-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_dis_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -318,7 +344,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_dis_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-1-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-1-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_dis_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -329,9 +355,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-1-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_dis_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-2-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-2-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_dis_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -350,9 +382,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-2-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_dis_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-3-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-3-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_dis_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -360,7 +395,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_dis_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-3-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-3-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_dis_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -371,9 +406,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-3-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_dis_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-4-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-4-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_dis_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -381,7 +420,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_dis_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-4-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-4-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_dis_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -392,9 +431,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-4-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_dis_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-5-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-5-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_dis_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -402,7 +445,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_dis_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-5-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_dis_vaw.wav" name="tts-evaluation-5-APDC2-026-03_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_dis_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -422,13 +465,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_amu_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 3</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_amu_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-1-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-1-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_amu_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -436,7 +483,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_amu_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-1-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-1-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_amu_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -447,9 +494,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-1-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_amu_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-2-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-2-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_amu_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -468,9 +521,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-2-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_amu_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-3-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-3-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_amu_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -478,7 +534,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_amu_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-3-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-3-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_amu_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -489,9 +545,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-3-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_amu_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-4-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-4-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_amu_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -499,7 +559,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_amu_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-4-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-4-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_amu_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -510,9 +570,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-4-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_amu_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-5-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-5-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_amu_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -520,7 +584,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_amu_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-5-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_amu_cyc.wav" name="tts-evaluation-5-APDC2-026-03_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_amu_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -540,13 +604,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_ang_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 4</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_ang_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-1-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-1-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_ang_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -554,7 +622,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_ang_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-1-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-1-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_ang_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -565,9 +633,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-1-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_ang_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-2-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-2-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_ang_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -586,9 +660,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-2-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_ang_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-3-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-3-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_ang_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -596,7 +673,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_ang_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-3-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-3-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_ang_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -607,9 +684,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-3-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_ang_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-4-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-4-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_ang_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -617,7 +698,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_ang_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-4-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-4-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_ang_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -628,9 +709,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-4-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_ang_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-5-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-5-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_ang_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -638,7 +723,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_ang_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-5-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_ang_vaw.wav" name="tts-evaluation-5-APDC2-088-04_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_ang_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -658,13 +743,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_sle_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 5</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_sle_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-1-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-1-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_sle_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -672,7 +761,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_sle_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-1-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-1-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_sle_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -683,9 +772,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-1-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_sle_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-2-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-2-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_sle_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -704,9 +799,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-2-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_sle_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-3-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-3-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_sle_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -714,7 +812,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_sle_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-3-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-3-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_sle_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -725,9 +823,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-3-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_sle_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-4-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-4-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_sle_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -735,7 +837,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_sle_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-4-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-4-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_sle_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -746,9 +848,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-4-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_sle_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-5-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-5-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_sle_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -756,7 +862,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_sle_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-5-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_sle_vaw.wav" name="tts-evaluation-5-APDC2-088-04_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_sle_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -776,13 +882,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_dis_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 6</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_dis_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-1-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-1-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_dis_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -790,7 +900,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_dis_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-1-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-1-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_dis_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -801,9 +911,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-1-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_dis_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-2-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-2-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_dis_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -822,9 +938,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-2-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_dis_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-3-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-3-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_dis_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -832,7 +951,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_dis_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-3-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-3-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_dis_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -843,9 +962,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-3-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_dis_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-4-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-4-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_dis_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -853,7 +976,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_dis_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-4-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-4-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_dis_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -864,9 +987,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-4-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_dis_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-5-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-5-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_dis_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -874,7 +1001,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_dis_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-5-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_dis_vaw.wav" name="tts-evaluation-5-APDC2-088-04_dis_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_dis_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -894,13 +1021,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_sle_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 7</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_sle_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-1-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-1-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_sle_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -908,7 +1039,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_sle_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-1-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-1-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_sle_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -919,9 +1050,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-1-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_sle_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-2-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-2-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_sle_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -940,9 +1077,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-2-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_sle_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-3-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-3-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_sle_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -950,7 +1090,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_sle_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-3-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-3-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_sle_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -961,9 +1101,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-3-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_sle_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-4-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-4-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_sle_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -971,7 +1115,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_sle_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-4-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-4-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_sle_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -982,9 +1126,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-4-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_sle_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-5-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-5-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_sle_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -992,7 +1140,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_sle_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-5-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_sle_vaw.wav" name="tts-evaluation-5-APDC2-026-03_sle_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_sle_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1012,13 +1160,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_ang_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 8</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_ang_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-1-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-1-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_ang_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1026,7 +1178,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_ang_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-1-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-1-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_ang_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1037,9 +1189,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-1-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_ang_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-2-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-2-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_ang_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1058,9 +1216,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-2-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_ang_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-3-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-3-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_ang_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1068,7 +1229,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_ang_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-3-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-3-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_ang_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1079,9 +1240,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-3-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_ang_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-4-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-4-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_ang_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1089,7 +1254,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_ang_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-4-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-4-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_ang_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1100,9 +1265,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-4-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_ang_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-5-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-5-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_ang_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1110,7 +1279,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_ang_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-5-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_ang_cyc.wav" name="tts-evaluation-5-APDC2-026-03_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_ang_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1130,13 +1299,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_ang_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 9</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_ang_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-1-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-1-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_ang_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1144,7 +1317,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_ang_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-1-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-1-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_ang_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1155,9 +1328,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-1-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_ang_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-2-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-2-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_ang_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1176,9 +1355,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-2-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_ang_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-3-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-3-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_ang_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1186,7 +1368,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_ang_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-3-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-3-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_ang_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1197,9 +1379,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-3-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_ang_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-4-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-4-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_ang_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1207,7 +1393,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_ang_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-4-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-4-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_ang_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1218,9 +1404,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-4-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_ang_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-5-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-5-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_ang_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1228,7 +1418,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_ang_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-5-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_ang_vaw.wav" name="tts-evaluation-5-APDC2-026-03_ang_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_ang_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1248,13 +1438,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_sle_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 10</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_sle_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-1-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-1-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_sle_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1262,7 +1456,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_sle_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-1-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-1-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_sle_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1273,9 +1467,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-1-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_sle_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-2-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-2-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_sle_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1294,9 +1494,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-2-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_sle_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-3-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-3-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_sle_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1304,7 +1507,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_sle_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-3-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-3-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_sle_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1315,9 +1518,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-3-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_sle_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-4-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-4-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_sle_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1325,7 +1532,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_sle_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-4-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-4-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_sle_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1336,9 +1543,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-4-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_sle_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-5-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-5-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_sle_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1346,7 +1557,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_sle_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-5-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_sle_cyc.wav" name="tts-evaluation-5-APDC2-088-04_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_sle_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1366,13 +1577,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_amu_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 11</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_amu_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-1-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-1-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_amu_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1380,7 +1595,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_amu_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-1-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-1-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_amu_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1391,9 +1606,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-1-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_amu_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-2-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-2-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_amu_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1412,9 +1633,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-2-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_amu_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-3-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-3-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_amu_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1422,7 +1646,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_amu_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-3-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-3-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_amu_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1433,9 +1657,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-3-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_amu_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-4-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-4-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_amu_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1443,7 +1671,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_amu_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-4-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-4-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_amu_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1454,9 +1682,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-4-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_amu_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-5-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-5-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_amu_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1464,7 +1696,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_amu_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-5-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_amu_vaw.wav" name="tts-evaluation-5-APDC2-026-03_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_amu_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1484,13 +1716,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_ang_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 12</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_ang_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-1-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-1-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_ang_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1498,7 +1734,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_ang_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-1-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-1-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_ang_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1509,9 +1745,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-1-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_ang_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-2-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-2-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_ang_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1530,9 +1772,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-2-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_ang_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-3-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-3-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_ang_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1540,7 +1785,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_ang_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-3-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-3-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_ang_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1551,9 +1796,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-3-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_ang_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-4-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-4-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_ang_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1561,7 +1810,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_ang_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-4-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-4-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_ang_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1572,9 +1821,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-4-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_ang_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-5-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-5-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_ang_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1582,7 +1835,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_ang_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-5-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_ang_cyc.wav" name="tts-evaluation-5-APDC2-088-04_ang_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_ang_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1602,13 +1855,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_amu_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 13</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_amu_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-1-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-1-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_amu_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1616,7 +1873,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_amu_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-1-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-1-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_amu_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1627,9 +1884,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-1-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_amu_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-2-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-2-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_amu_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1648,9 +1911,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-2-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_amu_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-3-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-3-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_amu_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1658,7 +1924,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_amu_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-3-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-3-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_amu_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1669,9 +1935,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-3-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_amu_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-4-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-4-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_amu_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1679,7 +1949,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_amu_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-4-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-4-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_amu_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1690,9 +1960,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-4-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_amu_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-5-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-5-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_amu_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1700,7 +1974,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_amu_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-5-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_amu_cyc.wav" name="tts-evaluation-5-APDC2-088-04_amu_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_amu_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1720,13 +1994,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-088-04_amu_vaw.wav" class="mb-5"></audio>
+                  <h6>Sample 14</h6>
+                  <audio controls="true" src="samples/APDC2-088-04_amu_vaw.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-1-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-1-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-088-04_amu_vaw.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1734,7 +2012,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-088-04_amu_vaw.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-1-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-1-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-088-04_amu_vaw.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1745,9 +2023,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-1-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-088-04_amu_vaw.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-2-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-2-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-088-04_amu_vaw.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1766,9 +2050,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-2-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-088-04_amu_vaw.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-3-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-3-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-088-04_amu_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1776,7 +2063,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-088-04_amu_vaw.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-3-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-3-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-088-04_amu_vaw.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1787,9 +2074,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-3-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-088-04_amu_vaw.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-4-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-4-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-088-04_amu_vaw.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1797,7 +2088,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-088-04_amu_vaw.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-4-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-4-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-088-04_amu_vaw.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1808,9 +2099,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-4-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-088-04_amu_vaw.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-5-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-5-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-088-04_amu_vaw.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1818,7 +2113,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-088-04_amu_vaw.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-5-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-088-04_amu_vaw.wav" name="tts-evaluation-5-APDC2-088-04_amu_vaw.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-088-04_amu_vaw.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1838,13 +2133,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_dis_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 15</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_dis_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-1-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-1-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_dis_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1852,7 +2151,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_dis_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-1-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-1-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_dis_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1863,9 +2162,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-1-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_dis_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-2-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-2-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_dis_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1884,9 +2189,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-2-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_dis_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-3-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-3-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_dis_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1894,7 +2202,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_dis_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-3-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-3-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_dis_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1905,9 +2213,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-3-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_dis_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-4-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-4-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_dis_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1915,7 +2227,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_dis_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-4-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-4-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_dis_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1926,9 +2238,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-4-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_dis_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-5-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-5-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_dis_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1936,7 +2252,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_dis_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-5-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_dis_cyc.wav" name="tts-evaluation-5-APDC2-026-03_dis_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_dis_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1956,13 +2272,17 @@
             <div class="row">
               <div class="col-lg-4 align-self-center">
                 <div class="text-center">
-                  <audio controls="true" src="samples/APDC2-026-03_sle_cyc.wav" class="mb-5"></audio>
+                  <h6>Sample 16</h6>
+                  <audio controls="true" src="samples/APDC2-026-03_sle_cyc.wav" class="mb-5 mt-5"></audio>
                 </div>
               </div>
               <div class="col-lg-8">
-                <h6 class="pb-1">What emotion do you think of the voice expressed?</h6>
+                <p class="pb-1">
+                  <strong>What emotion</strong>
+                  <span> do you think of the voice expressed?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-1-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-1-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-1-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-1-1-APDC2-026-03_sle_cyc.wav">1 — neutral</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1970,7 +2290,7 @@
                   <label class="custom-control-label" for="tts-evaluation-1-2-APDC2-026-03_sle_cyc.wav">2 — amused</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-1-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-1-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-1-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-1-3-APDC2-026-03_sle_cyc.wav">3 — anger</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -1981,9 +2301,15 @@
                   <input type="radio" id="tts-evaluation-1-5-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-1-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-1-5-APDC2-026-03_sle_cyc.wav">5 — sleepy</label>
                 </div>
-                <h6 class="pb-1 pt-5">If not Neutral, what do you think of the intensity of the emotion expressed? (If Neutral, please skip this question)</h6>
+                <p class="pb-1 pt-5">
+                  <span>If </span>
+                  <strong>NOT neutral</strong>
+                  <span>, what do you think of the </span>
+                  <strong>intensity</strong>
+                  <span> of the emotion expressed? (If neutral, please skip this question)</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-2-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-2-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-2-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-2-1-APDC2-026-03_sle_cyc.wav">1 — very weak</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2002,9 +2328,12 @@
                   <input type="radio" id="tts-evaluation-2-5-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-2-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-2-5-APDC2-026-03_sle_cyc.wav">5 — very strong</label>
                 </div>
-                <h6 class="pb-1 pt-5">How close to human would you rate the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <strong>How close to human</strong>
+                  <span> would you rate the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-3-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-3-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-3-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-3-1-APDC2-026-03_sle_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2012,7 +2341,7 @@
                   <label class="custom-control-label" for="tts-evaluation-3-2-APDC2-026-03_sle_cyc.wav">2 — a little bit close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-3-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-3-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-3-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-3-3-APDC2-026-03_sle_cyc.wav">3 — close</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2023,9 +2352,13 @@
                   <input type="radio" id="tts-evaluation-3-5-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-3-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-3-5-APDC2-026-03_sle_cyc.wav">5 — extremely close</label>
                 </div>
-                <h6 class="pb-1 pt-5">What do you think of the speech quality of the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>What do you think of the </span>
+                  <strong>speech quality</strong>
+                  <span> of the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-4-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-4-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-4-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-4-1-APDC2-026-03_sle_cyc.wav">1 — very bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2033,7 +2366,7 @@
                   <label class="custom-control-label" for="tts-evaluation-4-2-APDC2-026-03_sle_cyc.wav">2 — bad</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-4-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-4-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-4-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-4-3-APDC2-026-03_sle_cyc.wav">3 — moderate</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2044,9 +2377,13 @@
                   <input type="radio" id="tts-evaluation-4-5-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-4-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="5" />
                   <label class="custom-control-label" for="tts-evaluation-4-5-APDC2-026-03_sle_cyc.wav">5 — very good</label>
                 </div>
-                <h6 class="pb-1 pt-5">How much do you like the voice speaking?</h6>
+                <p class="pb-1 pt-5">
+                  <span>How much do you </span>
+                  <strong>like</strong>
+                  <span> the voice speaking?</span>
+                </p>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-5-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" />
+                  <input type="radio" id="tts-evaluation-5-1-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-5-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="1" required="true" />
                   <label class="custom-control-label" for="tts-evaluation-5-1-APDC2-026-03_sle_cyc.wav">1 — not at all</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2054,7 +2391,7 @@
                   <label class="custom-control-label" for="tts-evaluation-5-2-APDC2-026-03_sle_cyc.wav">2 — hardly</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
-                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-5-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" checked="true" />
+                  <input type="radio" id="tts-evaluation-5-3-APDC2-026-03_sle_cyc.wav" name="tts-evaluation-5-APDC2-026-03_sle_cyc.wav" class="custom-control-input" value="3" />
                   <label class="custom-control-label" for="tts-evaluation-5-3-APDC2-026-03_sle_cyc.wav">3 — moderately</label>
                 </div>
                 <div class="custom-control custom-radio form-check-inline">
@@ -2069,7 +2406,16 @@
             </div>
           </div>
         </div>
+        <div class="from-group mt-5">
+          <label _for="open-comments">Please leave your general opinion about the speeches here. We are also happy to hear your valuable suggestions. Thanks!</label>
+          <textarea class="form-control" id="open-comments" name="open-comments" placeholder="(Optional)" rows="3"></textarea>
+        </div>
         <button type="submit" class="btn btn-primary mt-5">Submit</button>
+        <p class="mt-3">
+          <span>Please send the generated CSV file to </span>
+          <a href="mailto:zijiang.yang@informatik.uni-augsburg.de?subject=Emotional Speech Evalution" target="_blank" rel="noopener noreferrer">zijiang.yang@informatik.uni-augsburg.de</a>
+          <span>. Thanks for your help!</span>
+        </p>
       </form>
     </div>
   </body>
@@ -2095,21 +2441,26 @@
                     return [getQuestionResponse(`tts-evaluation-1-${file_name}`),getQuestionResponse(`tts-evaluation-2-${file_name}`),getQuestionResponse(`tts-evaluation-3-${file_name}`),getQuestionResponse(`tts-evaluation-4-${file_name}`),getQuestionResponse(`tts-evaluation-5-${file_name}`)];
                 }
 
+                function getOpenComments() {
+                    let comments = $(`textarea[name="open-comments"]`).val();
+                    if ("" === comments) {
+                        return "(Optional)\n";
+                    } else {
+                        return comments.replace(/\r?\n|\r/g, " ") + "\n";
+                    }
+                }
+
                 function submitForm() {
                     let name = $("#name-input").val();
                     let files = ['APDC2-088-04_dis_cyc.wav','APDC2-026-03_dis_vaw.wav','APDC2-026-03_amu_cyc.wav','APDC2-088-04_ang_vaw.wav','APDC2-088-04_sle_vaw.wav','APDC2-088-04_dis_vaw.wav','APDC2-026-03_sle_vaw.wav','APDC2-026-03_ang_cyc.wav','APDC2-026-03_ang_vaw.wav','APDC2-088-04_sle_cyc.wav','APDC2-026-03_amu_vaw.wav','APDC2-088-04_ang_cyc.wav','APDC2-088-04_amu_cyc.wav','APDC2-088-04_amu_vaw.wav','APDC2-026-03_dis_cyc.wav','APDC2-026-03_sle_cyc.wav'];
-
                     let csv = "data:text/csv;charset=utf-8,";
-
                     csv += "filename;q1;q2;q3;q4;q5\n";
-
                     csv += buildCsvRow("self_evaluation", getSelfEvaluationResponses());
                     for (let i = 0; i < files.length; i++) {
                         csv += buildCsvRow(files[i], getTtsEvaluationResponsesForFile(files[i]));
                     }
-
+                    csv += getOpenComments();
                     let encodedUri = encodeURI(csv);
-
                     let downloadLink = document.createElement("a");
                     downloadLink.setAttribute("download", `${name}_results.csv`);
                     downloadLink.setAttribute("href", encodedUri);
