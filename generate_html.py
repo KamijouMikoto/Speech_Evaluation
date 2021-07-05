@@ -1,7 +1,5 @@
 import os
 
-from collections import defaultdict
-
 from airium import Airium
 
 
@@ -15,7 +13,7 @@ SELF_EVALUATION_QUESTIONS = [
 
 
 def get_file_list():
-    return os.listdir('./out/samples')
+    return sorted(os.listdir('./out/samples'))
 
 
 def generate_html():
@@ -86,13 +84,13 @@ def generate_html():
                                 with a.div(klass="card-body"):
                                     a.p(_t=question, klass="pb-3")
                                     with a.div(klass="custom-control custom-radio form-check-inline"):
-                                        a.input(type="radio", id=f"self-evaluation-{index}-1", name=f"self-evaluation-{index}", klass="custom-control-input", value=1)
+                                        a.input(type="radio", id=f"self-evaluation-{index}-1", name=f"self-evaluation-{index}", klass="custom-control-input", value=1, required=True)
                                         a.label(_t="1 — strongly disagree", klass="custom-control-label", for_=f"self-evaluation-{index}-1")
                                     with a.div(klass="custom-control custom-radio form-check-inline"):
                                         a.input(type="radio", id=f"self-evaluation-{index}-2", name=f"self-evaluation-{index}", klass="custom-control-input", value=2)
                                         a.label(_t="2 — disagree", klass="custom-control-label", for_=f"self-evaluation-{index}-2")
                                     with a.div(klass="custom-control custom-radio form-check-inline"):
-                                        a.input(type="radio", id=f"self-evaluation-{index}-3", name=f"self-evaluation-{index}", klass="custom-control-input", value=3, checked=True)
+                                        a.input(type="radio", id=f"self-evaluation-{index}-3", name=f"self-evaluation-{index}", klass="custom-control-input", value=3)
                                         a.label(_t="3 — neutral", klass="custom-control-label", name=f"self-evaluation-{index}", for_=f"self-evaluation-{index}-3")
                                     with a.div(klass="custom-control custom-radio form-check-inline"):
                                         a.input(type="radio", id=f"self-evaluation-{index}-4", name=f"self-evaluation-{index}", klass="custom-control-input", value=4)
@@ -102,7 +100,11 @@ def generate_html():
                                         a.label(_t="5 — strongly agree", klass="custom-control-label", for_=f"self-evaluation-{index}-5")
                     a.h4(_t="Emotional Speech Evalution", klass="mt-5 pt-5 text-success")
                     for index, file in enumerate(get_file_list()):
-                        with a.div(klass="card mt-5"):
+                        if index % 2 == 1:
+                            color_scheme = "bg-secondary bg-gradient text-white"
+                        else:
+                            color_scheme = "bg-light bg-gradient"
+                        with a.div(klass=f"card mt-5 {color_scheme}"):
                             with a.div(klass="card-body"):
                                 with a.div(klass="row"):
                                     with a.div(klass="col-lg-4 align-self-center"):
