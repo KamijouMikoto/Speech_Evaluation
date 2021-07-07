@@ -38,6 +38,10 @@ def generate_html():
                     If you are uncertain about an answer listen to the audio sample multiple times.
                     """
                 )
+                a.p(
+                    _t="""It is highly recommended to wear headphones during the evaluation.
+                    """
+                )
                 with a.p():
                     a.span(_t="""After you click ‘Submit’, all your answers will be recorded, and a CSV file will be
                     downloaded. Please send the CSV file to 
