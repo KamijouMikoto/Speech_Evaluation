@@ -173,24 +173,24 @@ def generate_html():
                                             a.label(_t="5 — Extremely close", klass="custom-control-label", for_=f"tts-evaluation-3-5-{file}")
 
                                         with a.p(klass="pb-1 pt-5"):
-                                            a.span(_t="What do you think of the ")
-                                            a.strong(_t="speech quality")
-                                            a.span(_t=" of the voice speaking?")
+                                            a.span(_t="Do you think the voice is ")
+                                            a.strong(_t="clear and understandable")
+                                            a.span(_t="?")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-1-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=1, required=True)
-                                            a.label(_t="1 — Very bad", klass="custom-control-label", for_=f"tts-evaluation-4-1-{file}")
+                                            a.label(_t="1 — Strongly disagree", klass="custom-control-label", for_=f"tts-evaluation-4-1-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-2-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=2)
-                                            a.label(_t="2 — Bad", klass="custom-control-label", for_=f"tts-evaluation-4-2-{file}")
+                                            a.label(_t="2 — Disagree", klass="custom-control-label", for_=f"tts-evaluation-4-2-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-3-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=3)
-                                            a.label(_t="3 — Moderate", klass="custom-control-label", for_=f"tts-evaluation-4-3-{file}")
+                                            a.label(_t="3 — Neutral", klass="custom-control-label", for_=f"tts-evaluation-4-3-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-4-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=4)
-                                            a.label(_t="4 — Good", klass="custom-control-label", for_=f"tts-evaluation-4-4-{file}")
+                                            a.label(_t="4 — Agree", klass="custom-control-label", for_=f"tts-evaluation-4-4-{file}")
                                         with a.div(klass="custom-control custom-radio form-check-inline"):
                                             a.input(type="radio", id=f"tts-evaluation-4-5-{file}", name=f"tts-evaluation-4-{file}", klass="custom-control-input", value=5)
-                                            a.label(_t="5 — Very good", klass="custom-control-label", for_=f"tts-evaluation-4-5-{file}")
+                                            a.label(_t="5 — Strongly agree", klass="custom-control-label", for_=f"tts-evaluation-4-5-{file}")
 
                                         with a.p(klass="pb-1 pt-5"):
                                             a.span(_t="How much do you ")
