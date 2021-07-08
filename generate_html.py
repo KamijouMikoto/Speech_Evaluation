@@ -228,7 +228,7 @@ def generate_html():
                             rel="noopener noreferrer"
                         )
                         a.span(
-                            _t=". Thanks for your help!"
+                            _t=". Your e-mail address will not be collected or linked with the data. Thanks for your help!"
                         )
         with a.script():
             a(
